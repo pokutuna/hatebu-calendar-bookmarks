@@ -1,0 +1,13 @@
+{
+    "name": "HatebuCalendarBookmarks",
+    "version": "0.2",
+    "description": "ブックマークページのカレンダーに件数を表示します",
+    "permissions": [ "*://b.hatena.ne.jp/*" ],
+    "content_scripts": [
+    {
+        "matches": [ "*://b.hatena.ne.jp/*/*" ],
+        "js": [ "jquery-1.6.2.min.js", "hatebu-calendar.js" ],
+        "css": ["hatebu-calendar-bookmarks.css"]
+     }
+    ]
+}
